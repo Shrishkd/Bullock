@@ -126,37 +126,6 @@ export default function Settings() {
         </Card>
       </motion.div>
 
-      {/* API Keys */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-      >
-        <Card className="glass p-6 border-border/50">
-          <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
-            <Database className="h-5 w-5 text-primary" />
-            API Configuration
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <Label htmlFor="api-key" className="text-foreground">API Key</Label>
-              <Input
-                id="api-key"
-                type="password"
-                placeholder="••••••••••••••••"
-                className="mt-2 bg-background/50 border-border/50 focus:border-primary transition-smooth"
-              />
-              <p className="text-sm text-muted-foreground mt-2">
-                Connect external data sources and trading platforms
-              </p>
-            </div>
-
-            <Button variant="outline" className="glass hover:glass-strong transition-smooth">
-              Generate New Key
-            </Button>
-          </div>
-        </Card>
-      </motion.div>
 
       {/* Security */}
       <motion.div
